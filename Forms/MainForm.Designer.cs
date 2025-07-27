@@ -33,6 +33,7 @@ namespace JUSTPayroll.Forms
             btnAddTeacher = new Button();
             btnShowAllTeachers = new Button();
             btnGiveSalary = new Button();
+            btnShowSalaryRecord = new Button();
             footerLabel = new Label();
             SuspendLayout();
             // 
@@ -86,6 +87,19 @@ namespace JUSTPayroll.Forms
             btnGiveSalary.UseVisualStyleBackColor = false;
             btnGiveSalary.Click += BtnGiveSalary_Click;
             // 
+            // btnShowSalaryRecord
+            // 
+            btnShowSalaryRecord.BackColor = Color.LightBlue;
+            btnShowSalaryRecord.FlatStyle = FlatStyle.Flat;
+            btnShowSalaryRecord.Font = new Font("Arial", 12F, FontStyle.Bold);
+            btnShowSalaryRecord.Location = new Point(335, 517);
+            btnShowSalaryRecord.Name = "btnShowSalaryRecord";
+            btnShowSalaryRecord.Size = new Size(269, 65);
+            btnShowSalaryRecord.TabIndex = 4;
+            btnShowSalaryRecord.Text = "Show Salary Record";
+            btnShowSalaryRecord.UseVisualStyleBackColor = false;
+            btnShowSalaryRecord.Click += BtnShowSalaryRecord_Click;
+            // 
             // footerLabel
             // 
             footerLabel.Font = new Font("Arial", 10F, FontStyle.Italic);
@@ -93,7 +107,7 @@ namespace JUSTPayroll.Forms
             footerLabel.Location = new Point(234, 703);
             footerLabel.Name = "footerLabel";
             footerLabel.Size = new Size(481, 19);
-            footerLabel.TabIndex = 4;
+            footerLabel.TabIndex = 5;
             footerLabel.Text = "© 2025 JUST Payroll System | All Rights Resereved.";
             footerLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -104,6 +118,7 @@ namespace JUSTPayroll.Forms
             BackColor = Color.Azure;
             ClientSize = new Size(966, 731);
             Controls.Add(footerLabel);
+            Controls.Add(btnShowSalaryRecord);
             Controls.Add(btnGiveSalary);
             Controls.Add(btnShowAllTeachers);
             Controls.Add(btnAddTeacher);
@@ -123,6 +138,7 @@ namespace JUSTPayroll.Forms
         private System.Windows.Forms.Button btnAddTeacher;
         private System.Windows.Forms.Button btnShowAllTeachers;
         private System.Windows.Forms.Button btnGiveSalary;
+        private System.Windows.Forms.Button btnShowSalaryRecord;
         private System.Windows.Forms.Label footerLabel;
     }
 }

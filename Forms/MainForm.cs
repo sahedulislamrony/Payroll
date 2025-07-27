@@ -51,5 +51,19 @@ namespace JUSTPayroll.Forms
                               MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void BtnShowSalaryRecord_Click(object? sender, EventArgs e)
+        {
+            try
+            {
+                ShowSalaryRecordForm showSalaryRecordForm = new ShowSalaryRecordForm();
+                showSalaryRecordForm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening Show Salary Record form: {ex.Message}", "Error", 
+                              MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
